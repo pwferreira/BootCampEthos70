@@ -1,4 +1,4 @@
-global class PostalCodeFutureMethod
+global class PostalCodeUpdate
 {
     @future(callout=true)
     public static void UpdateAddressAsync(ID id)
@@ -10,4 +10,5 @@ global class PostalCodeFutureMethod
          acc.BillingCity = (String) result.get('localidade') + ', ' + (String) result.get('uf');
          
     }
+
 }

@@ -31,7 +31,7 @@ public class AccountTriggerHandler {
         System.debug('AccountTriggerHandler IsAfterUpdate');
 
         if(newAccounts.size() == 1){
-            PostalCodeFutureMethod.UpdateAddressAsync(newAccounts[0].Id);
+            PostalCodeUpdate.UpdateAddressAsync(newAccounts[0].Id);
         }
     
     }
